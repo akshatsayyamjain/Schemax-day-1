@@ -1,13 +1,109 @@
-body {
-    text-align: center;
-    background-size: cover;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/550/114/non_2x/vector-abstract-geometric-form-pattern-chaotic-flow-figure-background.jpg);
-}
-h2{
-    font-size: 50px;
-    color:rgb(39, 17, 92);
-} 
 *{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    display: flex;
+    margin: 0;
+    padding: 15px 15px;
+    background-size: cover;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/%28Bay_of_Bengal%29_Beach_View_from_Tenneti_Park_06.JPG/1280px-%28Bay_of_Bengal%29_Beach_View_from_Tenneti_Park_06.JPG);
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}   
+
+.form{
+    display: block;
+    background-size: cover;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/%28Bay_of_Bengal%29_Beach_View_from_Tenneti_Park_06.JPG/1280px-%28Bay_of_Bengal%29_Beach_View_from_Tenneti_Park_06.JPG);
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.123);
+    padding: 55px 95px 68px;
+    border-radius: 20px;
     color: #000;
-    font-size: 25px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 45px;
+    
+}
+.nmtitle{
+    font-size: 15px;
+    padding-bottom: 11px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 400;
+}
+input{
+    padding: 0px 0px;
+    font-size: 18px;
+    color: rgb(71, 20, 119);
+    border-radius: 2px;
+    border: 1px solid rgb(80, 24, 94);
+    outline: none;
+}
+
+.input1{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 34px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:768px) {
+    .name{
+        flex-direction: column;
+        
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: auto;
+        justify-content: center;
+    }
+    
+    .input1{
+        width: 91%;
+    }
+}
+.gender{
+    margin-bottom: 30px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+select{
+    padding: 0px 0px;
+    font-size: 20px;
+    color: #333;
+    border-radius: 2px;
+    border: 1px solid rgb(109, 102, 102);
+    outline: none;
+    width: 100%;
+}
+.submitbtn{
+    
+    padding: 20px 15px;
+    border-radius: 100px;
+    border: black;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    background: rgba(250, 250, 250, 0.89);
+}
+.why{
+    color: aliceblue;
 }
