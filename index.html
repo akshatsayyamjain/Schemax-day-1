@@ -1,71 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms</title>
+<head>
+    <title> Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h2 >REGISTRATION FORM</h2>
-    <br action="" method="">
-      <div>
-        <label for="name">Name:</label>
-        <input required type="text" name="myName" id="name" />
-      </div>
-    </br>
-      <div  >
-        Email:
-        <input required type="email" name="myEmail" id="email" aria-required="true" />
-      </div>
-    </br>
-      <div>
-        Password:
-        <input required type="password" name="myPassword" id="password" />
-      </div>
-    </br>
-    <div>
-      Phone number:<input required type="number" name="myNumber" id="phone"/>
-    </div>
-    </form><br>
-      <div>
-          Date of birth:<input required type="date" name="myDate" id="date" />
-      </div>
-    </br>
-    <div>
-        Gender: 
-        Male<input type="radio" name="myGender" id="gender"/>
-        Female<input type="radio" name="myGender" id="gender"/>
-    </div>
-  </br>
-  <div>
-    College:<input required type="text" name="myCollege" id="college"/>
-  </div>
-</br>
-  <div>
-    Branch:  
-    <select>  
-    <Option value="CSNW">CSNW</Option>  
-    <option value="CSSE">CSSE</option>  
-    <option value="IT">IT</option>   
-    </select>
-   </div>
-</br>
-   <div>
-    Roll number:<input required type="number" name="myrollNumber" id="roll"/>
-  </div>
-  </br>
-    <div>
-        <h3>WHY YOU WANT TO JOIN SCHEMAX?</h3>
-    <textarea id="why" name="myText" cols="30" rows="10"></textarea>
-    </div>
-    <div>
-        Confirm?
-        <input  id="confirm" type="checkbox" name="confirmation" checked/>
-    </div>
-    <input style="margin-top: 30px" type="submit" value="Submit Now">
-
-    </form>
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main"> 
+        <div class="form">
+            <form class="container" action="">
+                <span class="title"><h5>SCHEMAX REGISTRATION FORM</h5></span>
+                <div class="name">
+                   <input type="text" name="name" required class="fname input1" placeholder="Name">
+                </div>
+                <input type="date" class="input1">
+                <input type="email" name="email" placeholder="Email" class="input1" required title="Enter a valid email-id">
+                <input type="password" class="input1" id="pwd" placeholder="Password" required/>
+                <input type="tel" class="input1" pattern="[6-9]{1}[0-9]{9}" required title="Enter a valid mobile number" placeholder="Phone number">
+                <input type="text" name="college"  class="input1" placeholder="College Name">
+                <input type="text" name="dep"  class="input1" placeholder="Department">
+               
+                <input type="text" name="rno"  class="input1" placeholder="Roll number">
+               
+                <div class="btn">
+                    <button onclick="" class="submitbtn"><span>SUBMIT</span></button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
 </html>
